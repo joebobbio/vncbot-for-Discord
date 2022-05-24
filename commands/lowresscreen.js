@@ -50,7 +50,7 @@ module.exports = {
 				new Discord.MessageAttachment(smallshot.toBuffer('image/png'), 'lowres.png')
 			])
 			.setImage('attachment://lowres.png');
-		msg.channel.send(embed);
 		msg.channel.stopTyping();
+		msg.channel.send(embed);
 	}
 };

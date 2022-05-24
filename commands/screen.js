@@ -32,7 +32,7 @@ module.exports = {
 				new Discord.MessageAttachment(screenshot.toBuffer('image/png'), 'screenshot.png')
 			])
 			.setImage('attachment://screenshot.png');
-		msg.channel.send(embed);
 		msg.channel.stopTyping();
+		msg.channel.send(embed);
 	}
 };

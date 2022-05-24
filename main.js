@@ -46,30 +46,9 @@ loadServersConfig: {
 			console.error('Your configuration file `' + vncServersName + '` is failing to load.');
 			console.error('Please double-check the file\'s validity and permissions prior to restarting the bot.');
 		} else {
-			console.error('Could not find configuration file `' + vncServersName + '`, creating it for you.');
+			console.error('Could not find configuration file `' + vncServersName + '`, is it in the same directory as the bot?');
 			console.error('If you have already setup your configuration file, ensure that you are in the same directory.');
 
-			fs.writeFileSync(vncServersPath, JSON.stringify({
-				'token': 'YOUR TOKEN HERE',
-				'defaultServer': 'dos',
-				'servers': {
-					'dos': {
-						'name': 'MS-DOS 6.22',
-						'ip': 'localhost',
-						'port': 5901
-					},
-					'macosx': {
-						'name': 'OS X 10.4.11',
-						'desc': 'Mac OS X 10.4 (Tiger) was the first major release of Apple\'s operating system to support x86-based processors.',
-						'ip': '192.168.1.4',
-						'port': 5900,
-						'auth': {
-							'password': 'tonybennett58'
-						},
-						'color': '#05c'
-					}
-				}
-			}, null, 4));
 		}
 
 		process.exit(1);

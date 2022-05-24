@@ -1,0 +1,21 @@
+{
+    "token": "YOUR TOKEN HERE",
+    "defaultServer": "dos",
+    "servers": {
+        "dos": {
+            "name": "MS-DOS 6.22",
+            "ip": "localhost",
+            "port": 5901
+        },
+        "macosx": {
+            "name": "OS X 10.4.11",
+            "desc": "Mac OS X 10.4 (Tiger) was the first major release of Apple's operating system to support x86-based processors.",
+            "ip": "192.168.1.4",
+            "port": 5900,
+            "auth": {
+                "password": "tonybennett58"
+            },
+            "color": "#05c"
+        }
+    }
+}
